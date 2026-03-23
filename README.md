@@ -5,10 +5,11 @@
 This project implements an **autonomous data auditing system** using **MCP-style tool orchestration** to inspect structured datasets, detect data quality issues, and generate explainable audit reports.
 
 Unlike traditional rule-based data validation pipelines, this system simulates an **agentic workflow** where an auditing agent:
-- interacts with tools
-- gathers structured evidence
-- performs multi-step reasoning
-- produces actionable insights
+
+- interacts with tools  
+- gathers structured evidence  
+- performs multi-step reasoning  
+- produces actionable insights  
 
 The goal is to demonstrate how **tool-augmented agents** can be used for real-world data quality monitoring in business systems.
 
@@ -17,11 +18,13 @@ The goal is to demonstrate how **tool-augmented agents** can be used for real-wo
 ##  Problem Statement
 
 Data quality issues are common in operational systems and can lead to:
+
 - incorrect business decisions  
 - financial losses  
 - poor customer experience  
 
 Typical problems include:
+
 - missing values  
 - negative or invalid values  
 - inconsistent categories  
@@ -29,6 +32,7 @@ Typical problems include:
 - duplicate records  
 
 Traditional validation systems:
+
 - rely on static rules  
 - lack flexibility  
 - do not provide structured reasoning  
@@ -41,12 +45,13 @@ This project addresses these limitations using an **agentic + tool-based auditin
 
 ### End-to-End Pipeline
 
-Dataset  
-→ MCP Tool Layer  
-→ Autonomous Audit Agent  
-→ Audit Findings  
-→ Evaluation Metrics  
-→ Final Report  
+Dataset
+→ MCP Tool Layer
+→ Autonomous Audit Agent
+→ Audit Findings
+→ Evaluation Metrics
+→ Final Report
+
 
 ---
 
@@ -68,12 +73,14 @@ The system exposes auditing functions as **tools**, simulating an MCP-style inte
 ##  Autonomous Audit Agent
 
 The agent:
+
 - calls tools sequentially  
 - gathers structured outputs  
 - tracks tool usage  
 - consolidates findings into a report  
 
-### Output includes:
+### Output Includes:
+
 - dataset summary  
 - audit findings  
 - tool call list  
@@ -86,10 +93,12 @@ The agent:
 The system is evaluated using measurable metrics:
 
 ### Audit Evaluation
+
 - **Precision** → correctness of detected issues  
 - **Recall** → completeness of detected issues  
 
 ### Tool Evaluation
+
 - **Tool Call Accuracy** → correct tools used  
 - **False Tool Calls** → unnecessary tool usage  
 
@@ -97,11 +106,11 @@ The system is evaluated using measurable metrics:
 
 ##  Sample Results
 
-- Retrieval of data issues successfully identified all injected anomalies  
-- Precision: ~1.00 (for most categories)  
-- Recall: ~1.00 (for known injected issues)  
-- Tool Call Accuracy: 1.00  
-- False Tool Calls: 0  
+- Successfully identified all injected data anomalies  
+- **Precision:** ~1.00  
+- **Recall:** ~1.00  
+- **Tool Call Accuracy:** 1.00  
+- **False Tool Calls:** 0  
 
 The MCP-based system demonstrates reliable detection of structured data issues with consistent tool usage.
 
@@ -159,35 +168,36 @@ mcp-based-autonomous-data-auditor/
 pip install -r requirements.txt
 streamlit run streamlit_app.py
 
----
 
-##  Key Insights
-• Tool-based agents improve transparency and explainability
-• Structured auditing enables better debugging and validation
-• Evaluation metrics provide measurable system performance
-• MCP-Style interfaces allow modular and extensible agent design
+**Key Insights**
+Tool-based agents improve transparency and explainability
+Structured auditing enables better debugging and validation
+Evaluation metrics provide measurable system performance
+MCP-style interfaces allow modular and extensible agent design
 
----
+**Future Improvements**
+Integrate LLM-based reasoning for dynamic tool selection
+Add anomaly detection models
+Support real-time streaming data auditing
+Deploy as scalable microservice
 
-## Future Improvements
-• Integrate LLM-based reasoning for dynamic tool selection
-• Add anomaly detection models
-• Support real-time streaming data auditing
-• Deploy as scalable microservice
+**Relevance to Real Systems**
 
----
+This project reflects real-world data pipelines where:
 
-## Relevance to Real Systems
-This Project reflects real-world data pipelines where:
-• data validation is critical
-• automated auditing reduces manual effort
-• explainability is required for debugging
-It demonstrates how **Agentic AI + Tool orchestration** can improve data quality workflows
+data validation is critical
+automated auditing reduces manual effort
+explainability is required for debugging
 
----
+It demonstrates how Agentic AI + Tool Orchestration can improve data quality workflows.
 
-## Summary
+**Summary**
 
 This project demonstrates how an autonomous agent can use tools to audit datasets, detect issues, and produce structured, explainable reports with measurable performance.
+
+
+
+
+
 
 
