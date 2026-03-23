@@ -1,0 +1,48 @@
+{
+  "dataset_summary": {
+    "status": "success",
+    "rows": 201,
+    "columns": 6,
+    "column_names": [
+      "order_id",
+      "price",
+      "quantity",
+      "customer_rating",
+      "delivery_days",
+      "category"
+    ]
+  },
+  "audit_findings": {
+    "missing_values": {
+      "order_id": 0,
+      "price": 0,
+      "quantity": 1,
+      "customer_rating": 0,
+      "delivery_days": 0,
+      "category": 0
+    },
+    "negative_values": {
+      "price": 1,
+      "quantity": 0,
+      "delivery_days": 1
+    },
+    "invalid_ranges": {
+      "customer_rating_invalid": 1
+    },
+    "invalid_categories": {
+      "invalid_category_count": 1
+    },
+    "duplicates": {
+      "duplicate_count": 1
+    }
+  },
+  "tool_calls": [
+    "read_data",
+    "run_missing_value_check",
+    "run_negative_value_check",
+    "run_invalid_range_check",
+    "run_invalid_category_check",
+    "run_duplicate_check"
+  ],
+  "tool_call_count": 6
+}

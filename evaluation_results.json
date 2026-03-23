@@ -1,0 +1,28 @@
+{
+  "audit_metrics": {
+    "missing_values": {
+      "precision": 1.0,
+      "recall": 1.0
+    },
+    "negative_values": {
+      "precision": 1.0,
+      "recall": 1.0
+    },
+    "invalid_ranges": {
+      "precision": 1.0,
+      "recall": 1.0
+    },
+    "invalid_categories": {
+      "precision": 1.0,
+      "recall": 1.0
+    },
+    "duplicates": {
+      "precision": 1.0,
+      "recall": 1.0
+    }
+  },
+  "tool_metrics": {
+    "tool_call_accuracy": 1.0,
+    "false_tool_calls": 0
+  }
+}
